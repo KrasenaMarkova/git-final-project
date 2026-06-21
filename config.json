@@ -1,4 +1,4 @@
 {
-  "security": "dashboard-v1",
-  "ui": "basic"
+  "security": "dashboard-v2",
+  "ui": "widgets"
 }

@@ -1,3 +1,5 @@
 {
-  "security": "enabled"
+  "security": "dashboard-v3",
+  "ui": "widgets",
+  "theme": "dark"
 }

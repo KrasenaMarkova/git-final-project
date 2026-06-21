@@ -1,4 +1,5 @@
 {
-  "security":  "auth-v2",
-  "login": true
+  "security":  "auth-final",
+  "login": true,
+  "logout": true
 }

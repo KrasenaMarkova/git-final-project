@@ -1,5 +1,7 @@
 {
-  "security": "dashboard-v3",
+  "security": "auth-final",
   "ui": "widgets",
-  "theme": "dark"
+  "theme": "dark",
+  "login": true,
+  "logout": true
 }

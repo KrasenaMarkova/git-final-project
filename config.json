@@ -1,3 +1,4 @@
 {
-  "security":  "auth-v1"
+  "security":  "auth-v2",
+  "login": true
 }

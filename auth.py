@@ -1,2 +1,2 @@
-def login():
-    return "login v1"
+def login(username):
+    return f"User {username} logged in"

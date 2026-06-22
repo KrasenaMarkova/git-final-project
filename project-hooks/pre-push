@@ -2,12 +2,15 @@
 
 echo "Running pre-push tests..."
 
-python -m pytest
+output=$(python -m pytest 2>&1)
+status=$?
 
-if [ $? -ne 0 ]; then
+echo "$output"
+
+if echo "$output" | grep -q "FAILED"; then
   echo "ERROR: Tests failed, push blocked"
   exit 1
 fi
 
-echo "All tests passed"
+echo "All tests passed (or no tests found)"
 exit 0

@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Git hooks
+.git/hooks/
+
+# OS
+.DS_Store

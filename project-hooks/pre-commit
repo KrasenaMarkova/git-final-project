@@ -1,0 +1,16 @@
+#!/bin/sh
+
+echo "Running pre-commit checks..."
+
+if command -v black >/dev/null 2>&1; then
+  black --check .
+  if [ $? -ne 0 ]; then
+    echo "ERROR: Code formatting check failed"
+    exit 1
+  fi
+else
+  echo "WARNING: black not installed"
+fi
+
+echo "Pre-commit checks passed"
+exit 0

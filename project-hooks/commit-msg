@@ -1,0 +1,14 @@
+#!/bin/sh
+
+commit_msg_file=$1
+commit_msg=$(cat "$commit_msg_file")
+
+echo "Checking commit message..."
+
+if ! echo "$commit_msg" | grep -qE "^[A-Z]+-[0-9]+: .+"; then
+  echo "ERROR: Commit message must follow TASK-123: message"
+  exit 1
+fi
+
+echo "Commit message OK"
+exit 0

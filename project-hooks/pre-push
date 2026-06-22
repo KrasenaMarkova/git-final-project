@@ -1,0 +1,13 @@
+#!/bin/sh
+
+echo "Running pre-push tests..."
+
+python -m pytest
+
+if [ $? -ne 0 ]; then
+  echo "ERROR: Tests failed, push blocked"
+  exit 1
+fi
+
+echo "All tests passed"
+exit 0

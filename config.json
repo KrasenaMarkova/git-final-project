@@ -1,7 +1,1 @@
-{
-  "security": "auth-final",
-  "ui": "widgets",
-  "theme": "dark",
-  "login": true,
-  "logout": true
-}
+{ "debug": true, "version": "1.1" }

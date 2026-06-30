@@ -9,3 +9,7 @@ function renderWidgets() {
 function initDashboard() {
     console.log("Dashboard initialized");
 }
+
+function analytics() {
+    console.log('analytics v1');
+}
